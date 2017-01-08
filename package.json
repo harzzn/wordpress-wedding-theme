@@ -1,13 +1,13 @@
 {
-  "name": "cj2017",
+  "name": "wordpress-wedding-theme",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Harri Heljala",
+  "license": "GPL-2.0",
   "dependencies": {
     "bootswatch": "^3.3.7",
     "owl.carousel": "^2.2.0"
