@@ -31,7 +31,18 @@ foreach ( $categories as $cat ) :
 			</div>
 
 			<?php while ( have_posts() ) : the_post(); ?>
-				<div class="col-xs-4">
+
+				<?php
+					global $wp_query;
+					$class = 'col-xs-4';
+
+					// TODO: need to take into account more cases
+					if ( 1 === $wp_query->post_count ) {
+						$class .= ' col-xs-offset-4';
+					}
+				?>
+
+				<div class="<?php echo $class; ?>">
 					<h5><?php the_title(); ?></h5>
 
 					<?php if ( has_post_thumbnail() ) : ?>
