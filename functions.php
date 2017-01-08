@@ -169,6 +169,6 @@ add_shortcode( 'wpwt_rsvp_form', 'wpwt_rsvp_form_shortcode' );
 
 //[wpwt_rsvp_form]
 function wpwt_rsvp_form_shortcode() {
-	require_once get_stylesheet_directory() . '/partials/shortcode-rsvp.php';
+	require_once get_stylesheet_directory() . '/template-parts/shortcode-rsvp.php';
 	return $shortcode;
 }
