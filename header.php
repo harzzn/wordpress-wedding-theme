@@ -12,9 +12,9 @@
 		<div class="container">
 			<header class="col-xs-10 col-xs-offset-1 text-center">
 				<h1>
-					Charlotta Grönlund
+					<?php bloginfo( 'name' ); ?>
 					<br>&amp;
-					<br>Jyrki Saarinen
+					<br><?php bloginfo( 'description' ); ?>
 				</h1>
 				<nav>
 					<?php wp_nav_menu( array( 'menu' => 'primary' ) ); ?>
