@@ -1,0 +1,18 @@
+{
+    "name": "harzzn/wordpress-wedding-theme",
+    "type": "wordpress-theme",
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Harri Heljala",
+            "email": "harri@helja.la",
+            "homepage": "https://helja.la",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "composer/installers": "~1.0",
+        "tgmpa/tgm-plugin-activation": "*"
+    }
+}
