@@ -8,11 +8,10 @@
 
 <?php
 
-// TODO: de-hardcode these
 $categories = array(
-	3,
-	4,
-	5,
+	get_cat_ID( 'Maids of Honour' ),
+	get_cat_ID( 'Best Men' ),
+	get_cat_ID( 'Slave of Honour' ),
 );
 
 foreach ( $categories as $cat ) :
