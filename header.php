@@ -12,9 +12,9 @@
 		<div class="container">
 			<header class="col-xs-10 col-xs-offset-1 text-center">
 				<h1>
-					<?php bloginfo( 'name' ); ?>
+					<?php echo WPWT_BRIDES_NAME; ?>
 					<br>&amp;
-					<br><?php bloginfo( 'description' ); ?>
+					<br><?php echo WPWT_GROOMS_NAME; ?>
 				</h1>
 				<nav>
 					<?php wp_nav_menu( array( 'menu' => 'primary' ) ); ?>
