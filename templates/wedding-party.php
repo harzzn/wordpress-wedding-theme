@@ -21,7 +21,7 @@ foreach ( $categories as $cat ) :
 		continue;
 	}
 
-	query_posts( "post_type=member&cat=$cat" );
+	query_posts( "post_type=wpwt_member&cat=$cat" );
 
 	if ( have_posts() ) : ?>
 

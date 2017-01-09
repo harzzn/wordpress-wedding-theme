@@ -102,7 +102,7 @@ function wpwt_register_venue_post_type() {
 		'publicly_queryable'    => false,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'venue', $args );
+	register_post_type( 'wpwt_venue', $args );
 
 }
 
@@ -155,7 +155,7 @@ function wpwt_register_member_post_type() {
 		'publicly_queryable'    => false,
 		'capability_type'       => 'post',
 	);
-	register_post_type( 'member', $args );
+	register_post_type( 'wpwt_member', $args );
 
 }
 

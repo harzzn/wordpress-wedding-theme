@@ -12,7 +12,7 @@
 	</section>
 <?php endwhile; ?>
 
-<?php query_posts( 'post_type=venue' ); ?>
+<?php query_posts( 'post_type=wpwt_venue' ); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 	<section class="col-xs-10 col-xs-offset-1">
