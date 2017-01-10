@@ -1,7 +1,7 @@
 <?php
 
 // The Composer autoload includes
-require_once get_stylesheet_directory() . '/vendor/autoload.php';
+require_once get_template_directory() . '/vendor/autoload.php';
 
 // Support for featured images
 add_theme_support( 'post-thumbnails' );
@@ -169,6 +169,6 @@ add_shortcode( 'wpwt_rsvp_form', 'wpwt_rsvp_form_shortcode' );
 
 //[wpwt_rsvp_form]
 function wpwt_rsvp_form_shortcode() {
-	require_once get_stylesheet_directory() . '/template-parts/shortcode-rsvp.php';
+	require_once get_template_directory() . '/template-parts/shortcode-rsvp.php';
 	return $shortcode;
 }
