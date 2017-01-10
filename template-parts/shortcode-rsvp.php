@@ -39,7 +39,7 @@ $shortcode = '
 						<textarea class="form-control" rows="3" id="textareaAllergies" placeholder="Allergies / Message"></textarea>
 					</div>
 				</div>
-				<legend>Avec</legend>
+				<legend>&nbsp;</legend>
 				<div class="form-group">
 					<label class="col-lg-4 control-label">I want to RSVP another invited guest</label>
 					<div class="col-lg-8">
