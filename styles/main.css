@@ -101,3 +101,7 @@ blockquote {
 	margin-top: 5px;
     margin-bottom: 25px;
 }
+
+.maids-of-honour__description {
+	line-height: 1.6;
+}
