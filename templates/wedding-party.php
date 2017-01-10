@@ -48,7 +48,9 @@ foreach ( $categories as $cat ) :
 						<?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive center-block img-round maids-of-honour__avatar' ) ); ?>
 					<?php endif; ?>
 
-					<?php the_content(); ?>
+					<div class="maids-of-honour__description">
+						<?php the_content(); ?>
+					</div>
 				</div>
 			<?php endwhile; ?>
 
