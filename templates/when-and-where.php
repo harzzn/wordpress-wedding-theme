@@ -15,12 +15,12 @@
 <?php query_posts( 'post_type=wpwt_venue' ); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
-	<section class="col-xs-10 col-xs-offset-1">
-		<div class="col-xs-6">
+	<section class="col-sm-10 col-sm-offset-1">
+		<div class="col-md-6">
 			<h2><?php the_title(); ?></h2>
 			<?php the_content(); ?>
 		</div>
-		<div class="col-xs-6">
+		<div class="col-md-6">
 			<?php if ( has_post_thumbnail() ) : ?>
 				<?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) ); ?>
 			<?php endif; ?>

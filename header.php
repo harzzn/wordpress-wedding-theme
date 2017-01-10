@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="col-xs-10 col-xs-offset-1 text-center">
+			<header class="col-sm-10 col-sm-offset-1 text-center">
 				<h1>
 					<?php echo WPWT_BRIDES_NAME; ?>
 					<br>&amp;

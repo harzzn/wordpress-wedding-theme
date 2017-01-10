@@ -11,7 +11,7 @@
 
 	<?php if ( has_post_thumbnail() || ! empty( $featured_images ) ) : ?>
 
-		<section class="col-xs-10 col-xs-offset-1">
+		<section class="col-sm-10 col-sm-offset-1">
 
 			<?php if ( ! empty( $featured_images ) ) : ?>
 				<div class="owl-carousel owl-theme">
@@ -32,7 +32,7 @@
 
 	<?php endif; ?>
 
-	<section class="col-xs-10 col-xs-offset-1 text-center">
+	<section class="col-sm-10 col-sm-offset-1 text-center">
 		<?php the_content(); ?>
 	</section>
 
@@ -42,7 +42,7 @@
 	?>
 
 	<?php if ( ! empty( $accommodation_name ) && ! empty( $accommodation_map_url ) ) : ?>
-		<section class="col-xs-10 col-xs-offset-1 text-center">
+		<section class="col-lg-10 col-lg-offset-1 text-center">
 			<h2 class="mb40"><?php echo $accommodation_name; ?></h2>
 			<iframe src="<?php echo $accommodation_map_url; ?>" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>

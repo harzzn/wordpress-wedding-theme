@@ -16,10 +16,7 @@ body {
 }
 
 .container {
-	margin: 100px auto;
 	background: white;
-	border: 3px solid #eee;
-	padding: 75px 75px 0;
 }
 
 header h1 {
@@ -104,4 +101,23 @@ blockquote {
 
 .maids-of-honour__description {
 	line-height: 1.6;
+}
+
+@media only screen and (max-width : 768px) {
+	.maids-of-honour__avatar {
+		max-height: 300px;
+	}
+
+	.maids-of-honour__avatar,
+	.maids-of-honour__description {
+		max-width: 300px;
+	}
+}
+
+@media only screen and (min-width : 768px) {
+	.container {
+		margin: 75px auto 100px;
+		border: 3px solid #eee;
+		padding: 50px 50px 0;
+	}
 }

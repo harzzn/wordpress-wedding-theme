@@ -24,7 +24,7 @@ foreach ( $categories as $cat ) :
 
 	if ( have_posts() ) : ?>
 
-		<section class="col-xs-10 col-xs-offset-1 text-center">
+		<section class="col-lg-10 col-lg-offset-1 text-center">
 			<div class="col-xs-12">
 				<h2 class="mb20"><?php echo get_cat_name( $cat ); ?></h2>
 			</div>
@@ -33,11 +33,11 @@ foreach ( $categories as $cat ) :
 
 				<?php
 					global $wp_query;
-					$class = 'col-xs-4';
+					$class = 'col-sm-4';
 
 					// TODO: need to take into account more cases
 					if ( 1 === $wp_query->post_count ) {
-						$class .= ' col-xs-offset-4';
+						$class .= ' col-sm-offset-4';
 					}
 				?>
 
@@ -48,7 +48,7 @@ foreach ( $categories as $cat ) :
 						<?php the_post_thumbnail( 'full', array( 'class' => 'img-responsive center-block img-round maids-of-honour__avatar' ) ); ?>
 					<?php endif; ?>
 
-					<div class="maids-of-honour__description">
+					<div class="maids-of-honour__description center-block">
 						<?php the_content(); ?>
 					</div>
 				</div>
