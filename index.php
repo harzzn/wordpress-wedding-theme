@@ -44,6 +44,7 @@
 	<?php if ( ! empty( $accommodation_name ) && ! empty( $accommodation_map_url ) ) : ?>
 		<section class="col-lg-10 col-lg-offset-1 text-center">
 			<h2 class="mb40"><?php echo $accommodation_name; ?></h2>
+			<div class="map-overlay" onClick="style.pointerEvents='none'"></div>
 			<iframe src="<?php echo $accommodation_map_url; ?>" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</section>
 	<?php endif; ?>
