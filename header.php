@@ -13,7 +13,7 @@
 			<header class="col-sm-10 col-sm-offset-1 text-center">
 				<h1>
 					<?php echo WPWT_BRIDES_NAME; ?>
-					<br>&amp;
+					<br><img src="<?php echo get_template_directory_uri(); ?>/images/heart.svg" class="header__heart" />
 					<br><?php echo WPWT_GROOMS_NAME; ?>
 				</h1>
 				<nav>
