@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<header class="col-sm-10 col-sm-offset-1 text-center">
+			<header class="col-md-10 col-md-offset-1 text-center">
 				<h1>
 					<?php echo WPWT_BRIDES_NAME; ?>
 					<br><img src="<?php echo get_template_directory_uri(); ?>/images/heart.svg" class="header__heart" />
