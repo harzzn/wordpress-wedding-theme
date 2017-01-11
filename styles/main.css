@@ -29,8 +29,8 @@ header nav {
 }
 
 .header__heart {
-	height: 75px;
-	margin: 10px 0;
+	height: 25px;
+	margin: 0 0 10px;
 }
 
 nav ul {
