@@ -94,6 +94,10 @@ blockquote {
 	border-radius: 1000px;
 }
 
+.mt20 {
+	margin-top: 20px;
+}
+
 .mt40 {
 	margin-top: 40px;
 }
@@ -123,6 +127,10 @@ blockquote {
 	.maids-of-honour__avatar,
 	.maids-of-honour__description {
 		max-width: 300px;
+	}
+
+	footer nav {
+		text-align: center;
 	}
 }
 
