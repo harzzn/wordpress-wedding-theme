@@ -21,6 +21,7 @@ body {
 
 header h1 {
 	font-family: 'Mr De Haviland', cursive;
+	margin: 0;
 }
 
 header nav {
@@ -121,10 +122,10 @@ blockquote {
 
 @media only screen and (max-width : 768px) {
 	.maids-of-honour__avatar {
-		max-height: 300px;
+		max-height: 240px;
+		max-width: 240px;
 	}
 
-	.maids-of-honour__avatar,
 	.maids-of-honour__description {
 		max-width: 300px;
 	}
@@ -136,7 +137,7 @@ blockquote {
 
 @media only screen and (min-width : 768px) {
 	.container {
-		margin: 75px auto 100px;
+		margin: 25px auto 50px;
 		border: 3px solid #eee;
 		padding: 50px 50px 0;
 	}
