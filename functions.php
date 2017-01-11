@@ -5,6 +5,7 @@ require_once get_template_directory() . '/vendor/autoload.php';
 
 // Support for featured images
 add_theme_support( 'post-thumbnails' );
+add_theme_support( 'title-tag' );
 
 add_action( 'after_setup_theme', 'wpwt_register_menus' );
 
