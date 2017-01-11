@@ -120,8 +120,10 @@ blockquote {
 	line-height: 1.6;
 }
 
-// Disable mouse scroll wheel zoom on embedded Google Maps
-// See: http://stackoverflow.com/a/22567753/3073849
+/*
+	Disable mouse scroll wheel zoom on embedded Google Maps
+	See: http://stackoverflow.com/a/22567753/3073849
+*/
 .map-overlay {
 	background: transparent;
 	position: relative;
