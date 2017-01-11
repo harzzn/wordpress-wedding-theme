@@ -17,7 +17,7 @@
 					<br><?php echo WPWT_GROOMS_NAME; ?>
 				</h1>
 				<nav>
-					<?php wp_nav_menu( array( 'menu' => 'primary' ) ); ?>
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					<div class="navigation-line"></div>
 				</nav>
 			</header>

@@ -38,6 +38,7 @@ function wpwt_register_required_plugins() {
 
 function wpwt_register_menus() {
 	register_nav_menu( 'primary', __( 'Primary Menu', 'wordpress-wedding-theme' ) );
+	register_nav_menu( 'footer', __( 'Footer Menu', 'wordpress-wedding-theme' ) );
 }
 
 function wpwt_enqueue_styles() {
