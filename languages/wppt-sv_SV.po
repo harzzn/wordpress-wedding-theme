@@ -1,0 +1,67 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wordpress-wedding-theme\n"
+"POT-Creation-Date: 2017-01-12 22:20+0200\n"
+"PO-Revision-Date: 2017-01-12 22:22+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../template-parts\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: shortcode-rsvp.php\n"
+
+#: shortcode-rsvp.php:56
+msgid "Thank you for your sign up!"
+msgstr "Tack för din anmälan!"
+
+#: shortcode-rsvp.php:64
+msgid "RSVP"
+msgstr ""
+
+#: shortcode-rsvp.php:66
+msgid "My Details"
+msgstr "Mina uppgifter"
+
+#: shortcode-rsvp.php:68 shortcode-rsvp.php:70
+msgid "Name"
+msgstr "Namn"
+
+#: shortcode-rsvp.php:74 shortcode-rsvp.php:121
+msgid "In need of transportation from church to Villa Haka"
+msgstr "I behov av transportation från kyrkan till Villa Haka"
+
+#: shortcode-rsvp.php:78 shortcode-rsvp.php:79 shortcode-rsvp.php:101
+#: shortcode-rsvp.php:102 shortcode-rsvp.php:125 shortcode-rsvp.php:126
+msgid "No"
+msgstr "Nej"
+
+#: shortcode-rsvp.php:84 shortcode-rsvp.php:85 shortcode-rsvp.php:107
+#: shortcode-rsvp.php:108 shortcode-rsvp.php:131 shortcode-rsvp.php:132
+msgid "Yes"
+msgstr "Ja"
+
+#: shortcode-rsvp.php:91 shortcode-rsvp.php:93 shortcode-rsvp.php:138
+#: shortcode-rsvp.php:140
+msgid "Allergies / Additional Info"
+msgstr "Allergier / Tilläggsinformation"
+
+#: shortcode-rsvp.php:97
+msgid "I want to RSVP another invited guest"
+msgstr "Jag vill anmäla en ytterligare inbjuden gäst"
+
+#: shortcode-rsvp.php:115 shortcode-rsvp.php:117
+msgid "His/Her Name"
+msgstr "Hans/Hennes namn"
+
+#: shortcode-rsvp.php:146 shortcode-rsvp.php:148
+msgid "Email"
+msgstr "E-post"
+
+#: shortcode-rsvp.php:153
+msgid "Send"
+msgstr "Skicka"
