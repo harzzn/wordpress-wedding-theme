@@ -8,6 +8,7 @@ add_theme_support( 'post-thumbnails' );
 add_theme_support( 'title-tag' );
 
 add_action( 'after_setup_theme', 'wpwt_register_menus' );
+add_action( 'after_setup_theme', 'wpwt_load_theme_textdomain' );
 
 add_action( 'wp_enqueue_scripts', 'wpwt_enqueue_styles' );
 add_action( 'wp_enqueue_scripts', 'wpwt_enqueue_scripts' );
@@ -51,6 +52,10 @@ function wpwt_enqueue_styles() {
 function wpwt_enqueue_scripts() {
 	wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/node_modules/owl.carousel/dist/owl.carousel.js', array( 'jquery' ) );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js', array( 'owl.carousel' ) );
+}
+
+function wpwt_load_theme_textdomain() {
+	load_theme_textdomain( 'wordpress-wedding-theme', get_template_directory() . '/languages' );
 }
 
 /**
