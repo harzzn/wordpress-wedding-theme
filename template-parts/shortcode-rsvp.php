@@ -141,7 +141,7 @@ if ( ! empty( $_REQUEST['wpwt_name_1'] ) ) {
 							</div>
 						</div>
 					</div>
-					<legend>My Contact Info</legend>
+					<legend>' . __( 'My Contact Info', 'wordpress-wedding-theme' ) . '</legend>
 					<div class="form-group">
 						<label for="inputEmail" class="col-lg-4 control-label">' . __( 'Email', 'wordpress-wedding-theme' ) . '</label>
 						<div class="col-lg-8">
