@@ -138,6 +138,10 @@ blockquote {
 		padding-top: 50px;
 	}
 
+	.wedding-party-section .col-sm-4 + .col-sm-4 {
+		margin-top: 40px;
+	}
+
 	.maids-of-honour__avatar {
 		max-height: 240px;
 		max-width: 240px;

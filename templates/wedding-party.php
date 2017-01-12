@@ -24,7 +24,7 @@ foreach ( $categories as $cat ) :
 
 	if ( have_posts() ) : ?>
 
-		<section class="col-lg-10 col-lg-offset-1 text-center">
+		<section class="col-lg-10 col-lg-offset-1 text-center wedding-party-section">
 			<div class="col-xs-12">
 				<h2 class="mb20"><?php echo get_cat_name( $cat ); ?></h2>
 			</div>
