@@ -52,6 +52,11 @@ nav a {
 	margin: 0 10px;
 }
 
+h2,
+.h2 {
+	font-size: 35px;
+}
+
 a {
 	color: rgba(28, 28, 28, 0.7);
 }
