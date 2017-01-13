@@ -61,7 +61,7 @@ if ( ! empty( $_REQUEST['wpwt_name_1'] ) ) {
 
 		<div class="col-xs-12 mb40">
 			<div class="col-xs-10 col-xs-offset-1 text-left no-padding">
-				<h3 class="text-center mb40">' . __( 'RSVP', 'wordpress-wedding-theme' ) . '</h3>
+				<h2 class="text-center mb40">' . __( 'RSVP', 'wordpress-wedding-theme' ) . '</h2>
 				<form method="post">
 					<legend>' . __( 'My Details', 'wordpress-wedding-theme' ) . '</legend>
 					<div class="form-group">
