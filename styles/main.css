@@ -111,6 +111,10 @@ blockquote {
     margin-bottom: 40px;
 }
 
+.venues-section h2 {
+	margin-top: 0;
+}
+
 .maids-of-honour__avatar {
 	margin-top: 5px;
     margin-bottom: 25px;
