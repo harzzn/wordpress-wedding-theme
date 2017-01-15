@@ -52,6 +52,10 @@ function wpwt_enqueue_styles() {
 function wpwt_enqueue_scripts() {
 	wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/node_modules/owl.carousel/dist/owl.carousel.js', array( 'jquery' ) );
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js', array( 'owl.carousel' ) );
+
+	// Inline Webshim
+	wp_enqueue_script( 'webshim', get_template_directory_uri() . '/node_modules/webshim/js-webshim/minified/polyfiller.js', array( 'jquery' ) );
+	wp_add_inline_script( 'webshim', 'webshim.activeLang("en"); webshims.polyfill("forms"); webshims.cfg.no$Switch = true;' );
 }
 
 function wpwt_load_theme_textdomain() {
