@@ -51,7 +51,7 @@ function wpwt_enqueue_styles() {
 
 function wpwt_enqueue_scripts() {
 	wp_enqueue_script( 'owl.carousel', get_template_directory_uri() . '/node_modules/owl.carousel/dist/owl.carousel.js', array( 'jquery' ) );
-	wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js', array( 'owl.carousel' ) );
+	wp_enqueue_script( 'main', get_template_directory_uri() . '/scripts/main.js', array( 'owl.carousel' ), '1.0.1' );
 
 	// Inline Webshim
 	wp_enqueue_script( 'webshim', get_template_directory_uri() . '/node_modules/webshim/js-webshim/minified/polyfiller.js', array( 'jquery' ) );

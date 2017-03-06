@@ -16,5 +16,9 @@
 			$( '.js-rsvp-avec-info' ).toggleClass( 'hidden' );
 		});
 
+		$( '.js-rsvp-joining-toggle' ).change( function() {
+			$( '.js-rsvp-joining-info' ).toggleClass( 'hidden' );
+		});
+
 	});
 })( jQuery );

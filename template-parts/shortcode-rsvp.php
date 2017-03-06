@@ -25,6 +25,10 @@ if ( ! empty( $_REQUEST['wpwt_name_1'] ) ) {
 	// Add name to database
 	update_post_meta( $post_id, 'wpwt_name_1', $_REQUEST['wpwt_name_1'] );
 
+	if ( ! empty( $_REQUEST['wpwt_joining_1'] ) ) {
+		update_post_meta( $post_id, 'wpwt_joining_1', $_REQUEST['wpwt_joining_1'] );
+	}
+
 	if ( ! empty( $_REQUEST['wpwt_transportation_1'] ) ) {
 		update_post_meta( $post_id, 'wpwt_transportation_1', $_REQUEST['wpwt_transportation_1'] );
 	}
@@ -71,81 +75,100 @@ if ( ! empty( $_REQUEST['wpwt_name_1'] ) ) {
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="col-lg-4 control-label">' . __( 'In need of transportation from church to Villa Haka', 'wordpress-wedding-theme' ) . '</label>
+						<label class="col-lg-4 control-label">' . __( 'I will be joining the party', 'wordpress-wedding-theme' ) . '</label>
 						<div class="col-lg-8">
 							<div class="radio">
-								<label for="optionsTransportation1">
-									<input type="radio" name="wpwt_transportation_1" id="optionsTransportation1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" checked>
+								<label for="optionsJoining1">
+									<input type="radio" name="wpwt_joining_1" id="optionsJoining1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" class="js-rsvp-joining-toggle" checked>
 									' . __( 'No', 'wordpress-wedding-theme' ) . '
 								</label>
 							</div>
 							<div class="radio">
-								<label for="optionsTransportation2">
-									<input type="radio" name="wpwt_transportation_1" id="optionsTransportation2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '">
+								<label for="optionsJoining2">
+									<input type="radio" name="wpwt_joining_1" id="optionsJoining2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '" class="js-rsvp-joining-toggle">
 									' . __( 'Yes', 'wordpress-wedding-theme' ) . '
 								</label>
 							</div>
 						</div>
 					</div>
-					<div class="form-group">
-						<label for="textareaAllergies" class="col-lg-4 control-label">' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '</label>
-						<div class="col-lg-8">
-							<textarea class="form-control" rows="3" id="textareaAllergies" placeholder="' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '" name="wpwt_allergies_1"></textarea>
-						</div>
-					</div>
-					<div class="form-group">
-						<label class="col-lg-4 control-label">' . __( 'I want to RSVP another invited guest', 'wordpress-wedding-theme' ) . '</label>
-						<div class="col-lg-8">
-							<div class="radio">
-								<label for="optionsAvec1">
-									<input type="radio" name="wpwt_avec" id="optionsAvec1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" class="js-rsvp-avec-toggle" checked />
-									' . __( 'No', 'wordpress-wedding-theme' ) . '
-								</label>
-							</div>
-							<div class="radio">
-								<label for="optionsAvec2">
-									<input type="radio" name="wpwt_avec" id="optionsAvec2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '" class="js-rsvp-avec-toggle" />
-									' . __( 'Yes', 'wordpress-wedding-theme' ) . '
-								</label>
-							</div>
-						</div>
-					</div>
-					<div class="js-rsvp-avec-info hidden">
-						<div class="form-group">
-							<label for="inputName2" class="col-lg-4 control-label">' . __( 'His/Her Name', 'wordpress-wedding-theme' ) . '</label>
-							<div class="col-lg-8">
-								<input type="text" class="form-control" id="inputName2" placeholder="' . __( 'His/Her Name', 'wordpress-wedding-theme' ) . '" name="wpwt_name_2">
-							</div>
-						</div>
+					<div class="js-rsvp-joining-info hidden">
 						<div class="form-group">
 							<label class="col-lg-4 control-label">' . __( 'In need of transportation from church to Villa Haka', 'wordpress-wedding-theme' ) . '</label>
 							<div class="col-lg-8">
 								<div class="radio">
-									<label for="optionsTransportation2_1">
-										<input type="radio" name="wpwt_transportation_2" id="optionsTransportation2_1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" checked>
+									<label for="optionsTransportation1">
+										<input type="radio" name="wpwt_transportation_1" id="optionsTransportation1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" checked>
 										' . __( 'No', 'wordpress-wedding-theme' ) . '
 									</label>
 								</div>
 								<div class="radio">
-									<label for="optionsTransportation2_2">
-										<input type="radio" name="wpwt_transportation_2" id="optionsTransportation2_2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '">
+									<label for="optionsTransportation2">
+										<input type="radio" name="wpwt_transportation_1" id="optionsTransportation2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '">
 										' . __( 'Yes', 'wordpress-wedding-theme' ) . '
 									</label>
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<label for="textareaAllergies2" class="col-lg-4 control-label">' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '</label>
+							<label for="textareaAllergies" class="col-lg-4 control-label">' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '</label>
 							<div class="col-lg-8">
-								<textarea class="form-control" rows="3" id="textareaAllergies2" placeholder="' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '" name="wpwt_allergies_2"></textarea>
+								<textarea class="form-control" rows="3" id="textareaAllergies" placeholder="' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '" name="wpwt_allergies_1"></textarea>
 							</div>
 						</div>
-					</div>
-					<legend>' . __( 'My Contact Info', 'wordpress-wedding-theme' ) . '</legend>
-					<div class="form-group">
-						<label for="inputEmail" class="col-lg-4 control-label">' . __( 'Email', 'wordpress-wedding-theme' ) . '</label>
-						<div class="col-lg-8">
-							<input type="email" class="form-control" id="inputEmail" placeholder="' . __( 'Email', 'wordpress-wedding-theme' ) . '" name="wpwt_email" required>
+						<div class="form-group">
+							<label class="col-lg-4 control-label">' . __( 'I want to RSVP another invited guest', 'wordpress-wedding-theme' ) . '</label>
+							<div class="col-lg-8">
+								<div class="radio">
+									<label for="optionsAvec1">
+										<input type="radio" name="wpwt_avec" id="optionsAvec1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" class="js-rsvp-avec-toggle" checked />
+										' . __( 'No', 'wordpress-wedding-theme' ) . '
+									</label>
+								</div>
+								<div class="radio">
+									<label for="optionsAvec2">
+										<input type="radio" name="wpwt_avec" id="optionsAvec2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '" class="js-rsvp-avec-toggle" />
+										' . __( 'Yes', 'wordpress-wedding-theme' ) . '
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="js-rsvp-avec-info hidden">
+							<div class="form-group">
+								<label for="inputName2" class="col-lg-4 control-label">' . __( 'His/Her Name', 'wordpress-wedding-theme' ) . '</label>
+								<div class="col-lg-8">
+									<input type="text" class="form-control" id="inputName2" placeholder="' . __( 'His/Her Name', 'wordpress-wedding-theme' ) . '" name="wpwt_name_2">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-lg-4 control-label">' . __( 'In need of transportation from church to Villa Haka', 'wordpress-wedding-theme' ) . '</label>
+								<div class="col-lg-8">
+									<div class="radio">
+										<label for="optionsTransportation2_1">
+											<input type="radio" name="wpwt_transportation_2" id="optionsTransportation2_1" value="' . __( 'No', 'wordpress-wedding-theme' ) . '" checked>
+											' . __( 'No', 'wordpress-wedding-theme' ) . '
+										</label>
+									</div>
+									<div class="radio">
+										<label for="optionsTransportation2_2">
+											<input type="radio" name="wpwt_transportation_2" id="optionsTransportation2_2" value="' . __( 'Yes', 'wordpress-wedding-theme' ) . '">
+											' . __( 'Yes', 'wordpress-wedding-theme' ) . '
+										</label>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="textareaAllergies2" class="col-lg-4 control-label">' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '</label>
+								<div class="col-lg-8">
+									<textarea class="form-control" rows="3" id="textareaAllergies2" placeholder="' . __( 'Allergies / Additional Info', 'wordpress-wedding-theme' ) . '" name="wpwt_allergies_2"></textarea>
+								</div>
+							</div>
+						</div>
+						<legend>' . __( 'My Contact Info', 'wordpress-wedding-theme' ) . '</legend>
+						<div class="form-group">
+							<label for="inputEmail" class="col-lg-4 control-label">' . __( 'Email', 'wordpress-wedding-theme' ) . '</label>
+							<div class="col-lg-8">
+								<input type="email" class="form-control" id="inputEmail" placeholder="' . __( 'Email', 'wordpress-wedding-theme' ) . '" name="wpwt_email">
+							</div>
 						</div>
 					</div>
 					<div class="form-group">
